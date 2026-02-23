@@ -9,48 +9,71 @@ This project focuses on clean UI, modular components, and a smooth user experien
     <img src="./public/03.png" width="30%" /> 
 </p>
 
-✨ Features
-🌤️ Real‑Time Weather Data
-Current temperature, conditions, humidity, wind speed, UV index
 
-Hourly forecast with dynamic icons
+<b>✨ Features</b>
+<ul>
+    <li>🌤️ Real‑Time Weather Data Current temperature, conditions, humidity, wind speed, UV index</li>
+    <li>Hourly forecast with dynamic icons</li>
+    <li>5‑day forecast with detailed summaries</li>
+</ul>
 
-5‑day forecast with detailed summaries
+<b>🗺️ Interactive Cloud Cover Map</b>
+<ul>
+    <li>Cloud‑cover animation for the next 5 hours</li>
+    <li>Region‑aware map centered on the selected location</li>
+</ul>
 
-🗺️ Interactive Cloud Cover Map
-Cloud‑cover animation for the next 5 hours
 
-Region‑aware map centered on the selected location
 
-🎨 Theme & Unit Customization
-Light Glass, Dark Glass, or System theme
+<b>🎨 Theme & Unit Customization</b>
+<ul>
+    <li>Light Glass, Dark Glass, or System theme</li>
+    <li>Temperature units: Celsius / Fahrenheit</li>
+    <li>Wind speed units: km/h, mph, m/s</li>
+</ul>
 
-Temperature units: Celsius / Fahrenheit
+<b>🔍 Smart Search Search by city, airport code, or coordinates</b>
+<ul>
+    <li>“Use Current Location” support</li>
+    <li>Search history with quick access and “Clear All”</li>
+</ul>
 
-Wind speed units: km/h, mph, m/s
+<b>🧩 Modular Architecture</b>
+<ul>
+    <li>Component‑based structure</li>
+    <li>CSS Modules for scoped styling</li>
+    <li>Reusable hooks for data fetching and formatting</li>
+</ul>
 
-🔍 Smart Search
-Search by city, airport code, or coordinates
+<b>🛠️ Tech Stack</b>
 
-“Use Current Location” support
+<table>
+  <tr>
+    <th><b>Category</b></th>
+    <th><b>Technologies</b></th>
+  </tr>
+  <tr>
+    <td><b>Frontend</b></td>
+    <td>React.js, JavaScript, Vite</td>
+  </tr>
+    <tr>
+    <td><b>Styling</b></td>
+    <td>CSS Modules, custom themes</td>
+  </tr>
+  </tr>
+    <tr>
+    <td><b>APIs</b></td>
+    <td>Weather & geolocation APIs</td>
+  </tr>
+  </tr>
+    <tr>
+    <td><b>Build Tools</b></td>
+    <td>Vite, ESLint</td>
+  </tr>
+</table>
 
-Search history with quick access and “Clear All”
 
-🧩 Modular Architecture
-Component‑based structure
-
-CSS Modules for scoped styling
-
-Reusable hooks for data fetching and formatting
-
-🛠️ Tech Stack
-Category	Technologies
-Frontend	React.js, JavaScript, Vite
-Styling	CSS Modules, custom themes
-APIs	Weather & geolocation APIs
-Build Tools	Vite, ESLint
-
-📁 Project Structure
+<b>📁 Project Structure</b>
 <pre>
 Code
 src/
@@ -75,29 +98,30 @@ src/
  </pre>
 
 Each component folder contains:
-Component.jsx
-Component.module.css
-index.js
+<ul>
+    <li>Component.jsx</li>
+    <li>Component.module.css</li>
+    <li>index.js</li>
+</ul>
 
-🚀 Getting Started
+
+
+
+<b>🚀 Getting Started</b>
 1. Clone the repository
 <pre>
-bash
 git clone https://github.com/your-username/weatherpro.git
 cd weatherpro
 </pre>
 2. Install dependencies
 <pre>
-bash
 npm install
 </pre>
 3. Start the development server
 <pre>
-bash
 npm run dev
 </pre>
 4. Build for production
 <pre>
-bash
 npm run build
 </pre>
