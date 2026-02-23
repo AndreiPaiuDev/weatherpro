@@ -1,0 +1,54 @@
+.forecast {
+  width: 290px;
+  flex-shrink: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.detailsBtn {
+  font-size: 12px;
+  color: var(--color-accent-light);
+  background: none;
+  border: none;
+  padding: 0;
+  transition: var(--transition-fast);
+}
+
+.detailsBtn:hover { opacity: 0.75; }
+
+/* Day rows */
+.dayRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 11px 14px;
+  margin-bottom: var(--space-sm);
+  transition: var(--transition-fast);
+}
+
+.dayRow:hover { background: var(--color-bg-card-hover); }
+
+.dayName      { font-size: 13px; color: var(--color-day-name); width: 82px; flex-shrink: 0; }
+.dayIcon      { font-size: 17px; }
+.dayCondition { font-size: 12px; color: var(--color-text-secondary); flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dayMax       { font-size: 14px; font-weight: 600; color: var(--color-text-primary); margin-right: 4px; }
+.dayMin       { font-size: 13px; color: var(--color-day-min); }
+
+/* Responsive: goes full width below 1100px since hero stacks */
+@media (max-width: 1100px) {
+  .forecast { width: 100%; }
+}

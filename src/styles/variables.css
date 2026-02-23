@@ -1,0 +1,100 @@
+:root {
+  /* ── Colors (dark theme defaults) ── */
+  --color-bg-base:        #0b1230;
+  --color-bg-sidebar:     rgba(8, 14, 40, 0.72);
+  --color-bg-panel:       rgba(15, 25, 65, 0.55);
+  --color-bg-card:        rgba(255, 255, 255, 0.04);
+  --color-bg-card-hover:  rgba(255, 255, 255, 0.07);
+  --color-bg-input:       rgba(255, 255, 255, 0.04);
+
+  --color-accent:         #2563eb;
+  --color-accent-light:   #60a5fa;
+  --color-accent-glow:    rgba(37, 99, 235, 0.3);
+  --color-on-accent:      #ffffff;   /* text on accent-coloured backgrounds */
+
+  --color-text-primary:   #ffffff;
+  --color-text-secondary: rgba(255, 255, 255, 0.55);
+  --color-text-muted:     rgba(255, 255, 255, 0.30);
+  --color-text-dim:       rgba(255, 255, 255, 0.18);
+
+  --color-border:         rgba(255, 255, 255, 0.08);
+  --color-border-strong:  rgba(255, 255, 255, 0.13);
+
+  /* Component-level tokens */
+  --color-nav-text:       #b6c2e2;
+  --color-nav-icon:       #60a5fa;
+  --color-section-label:  #7b8bbd;
+  --color-temp-unit:      #4a90d9;
+  --color-condition:      rgba(255, 255, 255, 0.7);
+  --color-day-name:       rgba(255, 255, 255, 0.75);
+  --color-day-min:        rgba(255, 255, 255, 0.32);
+
+  /* Glassmorphism */
+  --glass-blur:           blur(20px);
+  --glass-blur-heavy:     blur(30px);
+  --glass-blur-light:     blur(10px);
+
+  /* Spacing */
+  --space-xs:   4px;
+  --space-sm:   8px;
+  --space-md:   12px;
+  --space-lg:   16px;
+  --space-xl:   20px;
+  --space-2xl:  24px;
+  --space-3xl:  32px;
+
+  /* Border radius */
+  --radius-sm:   8px;
+  --radius-md:   12px;
+  --radius-lg:   16px;
+  --radius-xl:   20px;
+  --radius-full: 9999px;
+
+  /* Sidebar */
+  --sidebar-width: 260px;
+
+  /* Transitions */
+  --transition-fast:   all 0.15s ease;
+  --transition-base:   all 0.2s ease;
+  --transition-slow:   all 0.3s ease;
+
+  /* Shadows */
+  --shadow-accent: 0 4px 16px rgba(37, 99, 235, 0.45);
+  --shadow-panel:  0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+
+/* ══════════════════════════════════════════
+   Light theme overrides
+══════════════════════════════════════════ */
+[data-theme="light"] {
+  --color-bg-base:        #eef2ff;
+  --color-bg-sidebar:     rgba(255, 255, 255, 0.72);
+  --color-bg-panel:       rgba(255, 255, 255, 0.65);
+  --color-bg-card:        rgba(0, 0, 0, 0.03);
+  --color-bg-card-hover:  rgba(0, 0, 0, 0.06);
+  --color-bg-input:       rgba(0, 0, 0, 0.04);
+
+  --color-accent:         #2563eb;
+  --color-accent-light:   #3b82f6;
+  --color-accent-glow:    rgba(37, 99, 235, 0.15);
+
+  --color-text-primary:   #1e293b;
+  --color-text-secondary: rgba(0, 0, 0, 0.55);
+  --color-text-muted:     rgba(0, 0, 0, 0.35);
+  --color-text-dim:       rgba(0, 0, 0, 0.15);
+
+  --color-border:         rgba(0, 0, 0, 0.08);
+  --color-border-strong:  rgba(0, 0, 0, 0.15);
+
+  --color-nav-text:       #475569;
+  --color-nav-icon:       #2563eb;
+  --color-section-label:  #64748b;
+  --color-temp-unit:      #3b82f6;
+  --color-condition:      rgba(0, 0, 0, 0.6);
+  --color-day-name:       rgba(0, 0, 0, 0.7);
+  --color-day-min:        rgba(0, 0, 0, 0.35);
+
+  --shadow-accent: 0 4px 16px rgba(37, 99, 235, 0.2);
+  --shadow-panel:  0 8px 32px rgba(0, 0, 0, 0.08);
+}

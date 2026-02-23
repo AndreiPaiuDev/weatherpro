@@ -1,0 +1,131 @@
+.hero {
+  background: var(--color-bg-panel);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3xl);
+  animation: fadeIn 0.3s ease;
+  display: flex;
+  flex-direction: row;
+}
+
+.left { flex: 1; min-width: 0; }
+
+/* Location */
+.locationRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  opacity: 0.85;
+  color: var(--color-text-secondary);
+}
+
+.location {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.date {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-2xl);
+  letter-spacing: -0.5px;
+}
+
+/* Temperature */
+.tempRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xl);
+  margin-bottom: var(--space-sm);
+}
+
+.temp {
+  font-size: 96px;
+  font-weight: 300;
+  color: var(--color-text-primary);
+  line-height: 1;
+  letter-spacing: -6px;
+}
+
+.tempUnit {
+  font-size: 52px;
+  color: var(--color-temp-unit);
+  font-weight: 300;
+  letter-spacing: 0;
+}
+
+.conditionIcon {
+  font-size: 80px;
+  line-height: 1;
+}
+
+.conditionLabel {
+  font-size: 20px;
+  color: var(--color-condition);
+  margin-bottom: var(--space-3xl);
+  font-weight: 400;
+}
+
+/* Metrics — flexible so they never overflow */
+.metrics {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.metricCard {
+  flex: 1 1 130px;    /* grow/shrink from 130px base */
+  min-width: 110px;   /* floor so text stays readable  */
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: var(--space-lg) 14px;
+  text-align: center;
+}
+
+.metricIcon  { font-size: 20px; margin-bottom: 6px; }
+.metricLabel { font-size: 11px; color: var(--color-text-secondary); margin-bottom: 4px; letter-spacing: 0.2px; }
+.metricValue { font-size: 18px; font-weight: 700; color: var(--color-text-primary); }
+
+/* ── Right panel (5-day forecast) ── */
+.right {
+  min-width: 260px;
+  max-width: 320px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* ── Tablet + mobile: stack hero vertically (matches hamburger breakpoint) ── */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .right {
+    min-width: 0;
+    max-width: none;
+    margin-left: 0;
+    margin-top: var(--space-xl);
+  }
+}
+
+/* ── Small phones ── */
+@media (max-width: 600px) {
+  .hero { padding: var(--space-xl); }
+  .temp { font-size: 68px; letter-spacing: -4px; }
+  .tempUnit { font-size: 38px; }
+  .conditionIcon { font-size: 56px; }
+}

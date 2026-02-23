@@ -1,0 +1,53 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #000814;
+  transition: background 0.3s ease;
+}
+
+/* Animated deep-sea glow */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  background: radial-gradient(
+      circle at center,
+      rgba(0, 120, 255, 0.35),
+      rgba(0, 60, 150, 0.20),
+      rgba(0, 30, 80, 0.15),
+      rgba(0, 10, 30, 1)
+    );
+
+  animation: deepGlow 10s ease-in-out infinite alternate;
+  background-size: 120% 120%;
+  pointer-events: none;
+}
+
+@keyframes deepGlow {
+  0% {
+    background-size: 120% 120%;
+    background-position: 50% 50%;
+  }
+  100% {
+    background-size: 140% 140%;
+    background-position: 48% 52%;
+  }
+}
+
+/* ── Light theme background ── */
+html[data-theme="light"] body {
+  background: #eef2ff;
+}
+
+html[data-theme="light"] body::before {
+  background: radial-gradient(
+      circle at center,
+      rgba(147, 197, 253, 0.35),
+      rgba(191, 219, 254, 0.2),
+      rgba(224, 231, 255, 0.1),
+      rgba(238, 242, 255, 1)
+    );
+}
